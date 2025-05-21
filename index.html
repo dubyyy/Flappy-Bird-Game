@@ -40,11 +40,20 @@
     border-radius: 12px;
   }
   @media (max-width: 600px) {
+    html, body {
+      height: 100vh;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
     #myCanvas {
-      width: 98vw;
-      height: 65vw;
+      width: 100vw;
+      height: 100vh;
       max-width: 100vw;
-      max-height: 80vh;
+      max-height: 100vh;
+      min-height: 100vh;
+      min-width: 100vw;
+      display: block;
     }
   }
 </style>
